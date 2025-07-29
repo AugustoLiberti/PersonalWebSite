@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Space+Grotesk&display=swap');
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fbe4c7;
+  color: #333;
+}
+
+header, footer {
+  background: #fff3e6;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  position: relative;
+  z-index: 2;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background: #ff9f68;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #1a252f;
+}
