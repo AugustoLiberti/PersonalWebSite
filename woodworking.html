@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woodworking</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+     <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+	  <a href="Git.html">Code</a>
+      <a href="woodworking.html">Woodworking</a>
+      <a href="foraging.html">Foraging</a>
+      <a href="playlists.html">Playlists</a>
+      <a href="books.html">Books</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Projects done</h2>
+    <p class="muted">Wood wood wood</p>
+
+    <div class="grid auto-150">
+      <img src="images\woodworking\IMG_9385.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+      <img src="images\woodworking\IMG_8204.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+    </div>
+
+    <div class="overlay" id="imgOverlay" onclick="closeOverlay()">
+      <img id="enlargedImage" src="" alt="Enlarged project" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2025 Augusto Liberti. Built with calm creativity.</div>
+  </footer>
+
+  <script>
+    function enlarge(src) {
+      const overlay = document.getElementById('imgOverlay');
+      const img = document.getElementById('enlargedImage');
+      img.src = src; overlay.classList.add('is-open');
+    }
+    function closeOverlay(){ document.getElementById('imgOverlay').classList.remove('is-open'); }
+  </script>
+</body>
+</html>

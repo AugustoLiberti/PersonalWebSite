@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Playlists</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
+  <header class="site-header">
+    <nav class="container nav">
+       <a href="index.html">Home</a>
       <a href="about.html">About Me</a>
-      <a href="projects.html">Projects</a>
-      <a href="open-lab.html">Open Lab</a>
+	  <a href="Git.html">Code</a>
+      <a href="woodworking.html">Woodworking</a>
+      <a href="foraging.html">Foraging</a>
       <a href="playlists.html">Playlists</a>
       <a href="books.html">Books</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
-  <div class="container">
-<h2>Spotify Playlists</h2><p>Curated sounds for focus, flow, and inspiration.</p><h3>Form a Band With Me 🎸</h3><form><input placeholder='Name'><input placeholder='Instrument'><textarea placeholder='Message'></textarea><button>Send</button></form>
-  </div>
-  <footer>
-    <p>&copy; 2025 Your Name. Built with calm creativity.</p>
+
+  <main class="container">
+    <h2>🎵 A series of curated Spotify playlists</h2>
+    <p class="muted">Music that inspires, energizes, and calms me — handpicked for every vibe.</p>
+
+    <section class="playlist-grid">
+      <article class="playlist-card">
+        <h3>🔥 Floating between strings</h3>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4WvgWytwQO8AfpGHlzy1kA?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </article>
+
+      <article class="playlist-card">
+        <h3>✨ Gentle but stubborn</h3>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ZLTXDQRlcUQQa5Ywsn2JM?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </article>
+
+      <article class="playlist-card">
+        <h3>🌿 Pokes you with a stick</h3>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1fEVL07JK0GPA9oL4v9wYb?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2025 Augusto Liberti. Built with calm creativity.</div>
   </footer>
 </body>
 </html>
