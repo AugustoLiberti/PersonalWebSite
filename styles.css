@@ -36,6 +36,7 @@
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
+	padding-top: 80px;
   margin: 0;
   font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
@@ -51,30 +52,106 @@ a:hover { color: var(--link-hover); }
   width: min(100%, 1000px);
   margin-inline: auto;
   padding: var(--space-6) var(--space-4);
+  /* container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* hidden menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 8px 0;
+}
+
+/* links inside dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* hover effect */
+.dropdown-content a:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+/* show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 }
 
 header.site-header, footer.site-footer {
-  background: var(--surface);
-  box-shadow: var(--shadow-1);
-  border-bottom: 1px solid rgba(0,0,0,.05);
+  /*background: #FFF0D4;
+  background: rgba(238,243,247,0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.22);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+ border-bottom: 1px solid rgba(77,168,218,0.5);*/
+
 }
 footer.site-footer { border-top: 1px solid rgba(0,0,0,.06); border-bottom: none; }
 
 /* ————— Nav ————— */
 .nav {
-  display: flex;
+  /*display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 12px 30px;
+  border-radius: 999px; */
+  
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  
+  background: #eef3f7;
+  padding: 12px 30px;
+
+  border-radius: 999px;   /* makes it an oval */
+  
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  width: fit-content;
+  margin: 20px auto; /* centers it horizontally */
+  
+   backdrop-filter: blur(10px);
+  background: rgba(238,243,247,0.8);
+  
 }
 .nav a {
-  font-weight: 600;
+  /*font-weight: 600;
   padding: .5rem .75rem;
   border-radius: var(--radius-1);
+   padding: 12px 30px;
+  border-radius: 999px;   /* makes it an oval 
+  */
+   text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: 0.2s;
 }
 .nav a:hover, .nav a[aria-current="page"] {
-  background: rgba(0,0,0,.05);
+  background: rgba(0,0,0,.08);
 }
 
 /* ————— Headings ————— */
