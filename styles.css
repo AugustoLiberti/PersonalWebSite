@@ -133,8 +133,12 @@ body{
 
 .menu-toggle{
   display:none;
+  position:fixed;
+  top:25px;
+  right:25px;
   font-size:28px;
   cursor:pointer;
+  z-index:2000;
 }
 
 /* ————— MOBILE RESPONSIVE ————— */
@@ -160,8 +164,8 @@ body{
 
 .menu-toggle{
   display:block;
-  position:absolute;
-  right:20px;
+  /*position:absolute;
+  right:20px;*/
 }
 
 .nav{
