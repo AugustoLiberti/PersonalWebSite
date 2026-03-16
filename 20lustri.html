@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woodworking</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+ <header class="site-header">
+    <nav class="container nav">
+        <a href="index.html">Home</a>
+	  <a href="Git.html">Code</a>
+	  <div class="dropdown">
+	  <a class="dropbtn">Projects</a>
+		 <div class="dropdown-content">
+				<a href="woodworking.html">Woodworking</a>
+				<a href="foraging.html">Foraging</a>
+				<a href="20lustri.html">20 Lustri</a>
+				<a href="open-lab.html">Open Lab</a>
+			</div>
+  </div>
+  <a href="learning.html">Learning</a>
+	<div class="dropdown">
+	  <a class="dropbtn">About</a>
+	  <div class="dropdown-content">
+		  <a href="about.html">Me</a>
+		  <a href="playlists.html">Playlists</a>
+		  <a href="books.html">Books</a>
+		  <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>20 Lustri</h2>
+	<h3> Ancorare il verde a terra		<h3>
+ 
+    <div class="grid auto-150">
+      <img src="images\foraging\IMG_0478.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+      <img src="images\foraging\IMG_2549.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+	  <img src="images\foraging\IMG_0021.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+	  <img src="images\foraging\IMG_0020.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+    </div>
+
+    <div class="overlay" id="imgOverlay" onclick="closeOverlay()">
+      <img id="enlargedImage" src="" alt="Enlarged project" />
+    </div>
+	
+	<p class = "muted"> 
+	20 Lustri è un progetto nato alla fine del 2024 con l'idea di realizzare un giardino rustico 
+	dove non si pensa solo al presente ma anche a cosa accadrà tra 100 anni.
+	
+	Incastonato tra villette a schiera e bosco, in una collina a sud della città,	
+	vorrei trasformare un lotto agricolo dismesso in un angolo ricreativo off-grid 
+	dove è possibile stare a contatto con la natura rimanendo in un contesto periurbano.
+	Nelle maglie discontinue del tessuto periurbano,	
+	dove si vive la mescolanza tra la zona residenziale e la campagna,
+	vorrei creare una macchia di giori nel </p>
+	
+	<div class="grid auto-150">
+      <img src="images\foraging\IMG_0478.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+      <img src="images\foraging\IMG_2549.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+	  <img src="images\foraging\IMG_0021.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+	  <img src="images\foraging\IMG_0020.jpeg" alt="Project thumbnail" class="thumbnail" onclick="enlarge(this.src)" />
+    </div>
+	
+	<p class = "muted"> 
+	Nel disordine urbanistico, mantenengo relazioni funzionali con la città, 
+	vorrei lasciare esprimere la natura in modo che ne possa giovare anche il quartiere,
+	dimostrando come la pianificazione territoriale dovrebbe bilanciare 
+	lo sviluppo urbano con la tutela del paesaggio agricolo e naturale residuo.
+	
+	
+	Azioni completatate:
+
+	Prossimaente:
+	
+	</p>
+  </main>
+
+
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2025 Augusto Liberti.</div>
+  </footer>
+
+  <script>
+    function enlarge(src) {
+      const overlay = document.getElementById('imgOverlay');
+      const img = document.getElementById('enlargedImage');
+      img.src = src; overlay.classList.add('is-open');
+    }
+    function closeOverlay(){ document.getElementById('imgOverlay').classList.remove('is-open'); }
+  </script>
+</body>
+</html>
